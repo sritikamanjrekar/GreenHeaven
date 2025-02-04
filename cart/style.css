@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 15px;
+    overflow-x: hidden;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #015f2b;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+/* header a{
+    color: #eee;
+    margin-right: 5px;
+    padding: 5px 10px;
+    transition: 0.2s;
+}
+
+a.active{
+    background: #14ff72cb;
+    border-radius: 2px;
+}
+
+header a:hover{
+    background: #14ff72cb;
+    border-radius: 2px;
+} */
+
+/* Logo */
+.left img {
+    width: 80px;
+}
+
+.left div {
+    line-height: 7px;
+    font-size: 12px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    font-size: 18px;
+    padding: 0 1rem;
+}
+
+.navbar a:hover,
+.right a:hover {
+    color: rgb(255, 251, 0);
+}
+
+/* Right Section (Links & Search) */
+.right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Search Bar */
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    outline: none;
+    transition: width 0.3s ease-in-out;
+}
+
+.search-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #555;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .navbar a {
+        font-size: 16px;
+        padding: 0 0.5rem;
+    }
+    
+    .search-input {
+        width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .right {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .search-input {
+        width: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .left img {
+        width: 60px;
+    }
+
+    .navbar {
+        gap: 5px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .search-input {
+        width: 140px;
+    }
+}
