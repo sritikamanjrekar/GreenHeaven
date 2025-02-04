@@ -14,7 +14,7 @@ html {
 }
 
 body {
-    background: #f4f4f4;
+    background: #cbf4c0;
 }
 
 /* Header */
@@ -277,14 +277,14 @@ a{
     margin-right: 5px;
     padding: 5px 10px;
     transition: 0.2s;
-} */
+}
 
 a.active{
     background: #14ff72cb;
     border-radius: 2px;
 }
 
-/* header a:hover{
+header a:hover{
     background: #14ff72cb;
     border-radius: 2px;
 } */
